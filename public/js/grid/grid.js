@@ -8,4 +8,4 @@ const gridGenerator = (columns, rows) => {
 
 gridGenerator(10, 10);
 
-module.exports = gridGenerator;
+export default gridGenerator;
