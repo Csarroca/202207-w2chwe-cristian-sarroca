@@ -1,7 +1,7 @@
 const gridGenerator = (columns, rows) => {
   const grid = [];
   for (let row = 0; row < rows; row++) {
-    grid.push(new Array(columns).fill({}));
+    grid.push(new Array(columns).fill(2));
   }
   return grid;
 };
