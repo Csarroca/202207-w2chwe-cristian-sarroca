@@ -1,0 +1,6 @@
+bacteriumGenerator = () => {
+ let bacterium = {
+  alive:
+  };
+
+}
