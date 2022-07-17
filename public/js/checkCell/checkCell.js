@@ -6,15 +6,16 @@ const checkRows = (row, column, grid) => {
   let checkCounter = 0;
 
   do {
-    if (cellChecked === true) {
-      aliveNeighbors += 1;
+    if (row < 0 || column < 0 || column >= grid.length || row >= grid.length) {
+      if (cellChecked === true) {
+        aliveNeighbors += 1;
+      }
+      columnTested += 1;
+      checkCounter += 1;
     }
-    columnTested += 1;
-    checkCounter += 1;
   } while (checkCounter < 3);
   return aliveNeighbors;
 };
-// prueba de github
 const checkCell = (row, column, grid) => {
   let counter = 0;
   let aliveNeighbors = 0;
