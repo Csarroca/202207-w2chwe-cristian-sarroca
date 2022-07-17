@@ -1,18 +1,22 @@
-const Cell = require("../Cell/Cell");
+const Bacterium = require("../Bacterium/Bacterium");
 
 const gridGenerator = (columns, rows) => {
   const grid = [];
-  let newCell;
+  let newBacterium;
 
   for (let i = 0; i < rows; i += 1) {
     grid.push([]);
     for (let j = 0; j < columns; j += 1) {
-      newCell = new Cell(false, i, j, 0);
-      grid[i].push(newCell);
+      newBacterium = new Bacterium(false, i, j, 0);
+      grid[i].push(newBacterium);
     }
   }
 
   return grid;
 };
+
+console.log(gridGenerator(5, 5));
+const grid = gridGenerator(5, 5);
+console.log(grid[0][0].alive);
 
 module.exports = gridGenerator;
