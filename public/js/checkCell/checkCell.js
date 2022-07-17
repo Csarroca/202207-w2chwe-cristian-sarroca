@@ -14,7 +14,7 @@ const checkRows = (row, column, grid) => {
   } while (checkCounter < 3);
   return aliveNeighbors;
 };
-
+// prueba de github
 const checkCell = (row, column, grid) => {
   let counter = 0;
   let aliveNeighbors = 0;
