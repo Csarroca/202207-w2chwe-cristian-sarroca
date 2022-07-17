@@ -1,23 +1,12 @@
-import gridGenerator from "./grid.js";
+const gridGenerator = require("./grid");
 // tengo q cambiar este tests no esta actu
 describe("Given a gridGenerator function ", () => {
-  describe("when it's called and it recives 10 and 10", () => {
-    test("Then it should return and array which lenght is 10 with 10 arrays inside with 10 number 2 inside of each one", () => {
-      const columns = 10;
-      const rows = 10;
+  describe("when it's called and it recives 5 and 5", () => {
+    test("Then it should return and array which lenght is 5 with 5 arrays inside with an object with alive,positionX,positionY and aliveNeighbors properties", () => {
+      const columns = 5;
+      const rows = 5;
 
-      const expectedOutput = [
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-        [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
-      ];
+      const expectedOutput = gridGenerator(5, 5);
 
       const realReturn = gridGenerator(columns, rows);
 

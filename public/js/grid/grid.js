@@ -15,8 +15,4 @@ const gridGenerator = (columns, rows) => {
   return grid;
 };
 
-console.log(gridGenerator(5, 5));
-const grid = gridGenerator(5, 5);
-console.log(grid[0][0].alive);
-
 module.exports = gridGenerator;
