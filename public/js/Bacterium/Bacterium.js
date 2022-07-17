@@ -12,7 +12,4 @@ class Bacterium {
   }
 }
 
-const bacteriassss = new Bacterium();
-console.log(bacteriassss);
-
 module.exports = Bacterium;
